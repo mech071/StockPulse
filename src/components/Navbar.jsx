@@ -69,7 +69,7 @@ useEffect(() => {
 
 
         {/* MARKET STATUS TILES */}
-<div className="hidden md:flex items-center gap-4 flex-1">
+<div className="hidden md:flex items-center gap-4 pr-50 flex-1">
 
   {/* NSE */}
   <div className="flex items-center gap-2 px-3 py-1 rounded-lg bg-zinc-900 border border-zinc-800">
