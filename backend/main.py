@@ -98,3 +98,6 @@ def finbert_dashboard(ticker: str):
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+@app.get("/stock/{ticker}/history")
+def price_history(ticker: str):
+    return get_price_history(ticker)

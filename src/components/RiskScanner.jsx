@@ -6,6 +6,7 @@ export default function RiskScanner({ risks, onClick }) {
     <div
       className="
         w-full
+        h-full
         bg-white/5
         backdrop-blur-md
         border border-white/10

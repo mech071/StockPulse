@@ -184,4 +184,20 @@ def get_headlines(ticker: str, limit: int = 15) -> list[str]:
         ]
 
     return titles[:limit]
-    
+def get_price_history(ticker: str):
+
+    stock = yf.Ticker(ticker)
+    hist = stock.history(period="3mo")
+
+    if hist.empty:
+        return []
+
+    data = []
+
+    for date, row in hist.iterrows():
+        data.append({
+            "time": date.strftime("%Y-%m-%d"),
+            "value": float(row["Close"])
+        })
+
+    return data
