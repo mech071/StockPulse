@@ -83,14 +83,12 @@ export default function PriceCard({ data, onClick }) {
         <PriceChart history={history} />
       </div>
 
-      {/* Button */}
-      <button
-        onClick={onClick}
-        className="w-full py-2 text-xs font-orbitron tracking-widest text-cyan-500/60 border border-cyan-500/10 rounded-lg hover:border-cyan-500/30 hover:text-cyan-400 hover:bg-cyan-500/5 transition-all"
-      >
-        VIEW DEEP ANALYSIS →
-      </button>
-
-    </div>
-  )
+            <button
+                onClick={onClick}
+                className="mt-4 w-full py-2 text-xs font-orbitron tracking-widest text-cyan-500/60 border border-cyan-500/10 rounded-lg hover:border-cyan-500/30 hover:text-cyan-400 hover:bg-cyan-500/5 transition-all cursor-pointer"
+            >
+                VIEW DEEP ANALYSIS →
+            </button>
+        </div>
+    )
 }
