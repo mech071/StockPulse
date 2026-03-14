@@ -62,7 +62,7 @@ function App() {
                 bg-size-[40px_40px]"
             />
 
-            <Navbar onAnalyze={handleAnalyze} />
+            <Navbar onAnalyze={handleAnalyze} data={data} setData={setData} />
 
             <div className="max-w-6xl mx-auto px-6 py-10 relative z-10">
                 {loading && (
