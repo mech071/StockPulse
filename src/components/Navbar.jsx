@@ -27,7 +27,7 @@ const Navbar = ({ onAnalyze, data, setData }) => {
 
   useEffect(() => {
     const fetchStatus = () => {
-      fetch("http://stockpulse-production-09c4.up.railway.app/market-status")
+      fetch("https://stockpulse-production-09c4.up.railway.app/market-status")
         .then(res => res.json())
         .then(data =>                                 // ✅ this line
           setMarketStatus({

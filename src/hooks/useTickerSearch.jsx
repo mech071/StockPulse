@@ -11,7 +11,7 @@ export default function useTickerSearch(onAnalyze) {
   const debounceRef = useRef(null)
 
   useEffect(() => {
-    fetch("http://stockpulse-production-09c4.up.railway.app/popular")
+    fetch("https://stockpulse-production-09c4.up.railway.app/popular")
       .then(r => r.json())
       .then(d => setPopular(d.results || []))
       .catch(() => {})
