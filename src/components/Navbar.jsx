@@ -27,7 +27,7 @@ const Navbar = ({ onAnalyze, data, setData }) => {
 
   useEffect(() => {
     const fetchStatus = () => {
-      fetch("http://127.0.0.1:8000/market-status")
+      fetch("http://stockpulse-production-09c4.up.railway.app/market-status")
         .then(res => res.json())
         .then(data =>                                 // ✅ this line
           setMarketStatus({

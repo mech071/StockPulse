@@ -28,7 +28,7 @@ export default function PriceCard({ data, onClick }) {
   useEffect(() => {
     if (!data?.ticker) return
     setLoading(true)
-    fetch(`http://127.0.0.1:8000/stock/${data.ticker}/history?period=${period}`)
+    fetch(`http://stockpulse-production-09c4.up.railway.app/stock/${data.ticker}/history?period=${period}`)
       .then(res => res.json())
       .then(d => { setHistory(d); setLoading(false) })
       .catch(() => { setHistory([]); setLoading(false) })
