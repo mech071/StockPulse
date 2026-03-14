@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE = 'https://stockpulse-production-09c4.up.railway.app';
+const BASE = 'http://localhost:8000';
 
 export const analyzeStock = async (ticker) => {
     const res = await axios.get(`${BASE}/stock/${ticker}/finbert`);
